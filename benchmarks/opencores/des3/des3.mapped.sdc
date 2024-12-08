@@ -1,0 +1,83 @@
+# ####################################################################
+
+#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Wed Sep 27 15:44:40 HKT 2023
+
+# ####################################################################
+
+set sdc_version 2.0
+
+set_units -capacitance 1fF
+set_units -time 1ps
+
+# Set the current design
+current_design des3
+
+create_clock -name "clk" -period 250.0 -waveform {0.0 125.0} [get_ports clk]
+set_load -pin_load 1.0 [get_ports {desOut[63]}]
+set_load -pin_load 1.0 [get_ports {desOut[62]}]
+set_load -pin_load 1.0 [get_ports {desOut[61]}]
+set_load -pin_load 1.0 [get_ports {desOut[60]}]
+set_load -pin_load 1.0 [get_ports {desOut[59]}]
+set_load -pin_load 1.0 [get_ports {desOut[58]}]
+set_load -pin_load 1.0 [get_ports {desOut[57]}]
+set_load -pin_load 1.0 [get_ports {desOut[56]}]
+set_load -pin_load 1.0 [get_ports {desOut[55]}]
+set_load -pin_load 1.0 [get_ports {desOut[54]}]
+set_load -pin_load 1.0 [get_ports {desOut[53]}]
+set_load -pin_load 1.0 [get_ports {desOut[52]}]
+set_load -pin_load 1.0 [get_ports {desOut[51]}]
+set_load -pin_load 1.0 [get_ports {desOut[50]}]
+set_load -pin_load 1.0 [get_ports {desOut[49]}]
+set_load -pin_load 1.0 [get_ports {desOut[48]}]
+set_load -pin_load 1.0 [get_ports {desOut[47]}]
+set_load -pin_load 1.0 [get_ports {desOut[46]}]
+set_load -pin_load 1.0 [get_ports {desOut[45]}]
+set_load -pin_load 1.0 [get_ports {desOut[44]}]
+set_load -pin_load 1.0 [get_ports {desOut[43]}]
+set_load -pin_load 1.0 [get_ports {desOut[42]}]
+set_load -pin_load 1.0 [get_ports {desOut[41]}]
+set_load -pin_load 1.0 [get_ports {desOut[40]}]
+set_load -pin_load 1.0 [get_ports {desOut[39]}]
+set_load -pin_load 1.0 [get_ports {desOut[38]}]
+set_load -pin_load 1.0 [get_ports {desOut[37]}]
+set_load -pin_load 1.0 [get_ports {desOut[36]}]
+set_load -pin_load 1.0 [get_ports {desOut[35]}]
+set_load -pin_load 1.0 [get_ports {desOut[34]}]
+set_load -pin_load 1.0 [get_ports {desOut[33]}]
+set_load -pin_load 1.0 [get_ports {desOut[32]}]
+set_load -pin_load 1.0 [get_ports {desOut[31]}]
+set_load -pin_load 1.0 [get_ports {desOut[30]}]
+set_load -pin_load 1.0 [get_ports {desOut[29]}]
+set_load -pin_load 1.0 [get_ports {desOut[28]}]
+set_load -pin_load 1.0 [get_ports {desOut[27]}]
+set_load -pin_load 1.0 [get_ports {desOut[26]}]
+set_load -pin_load 1.0 [get_ports {desOut[25]}]
+set_load -pin_load 1.0 [get_ports {desOut[24]}]
+set_load -pin_load 1.0 [get_ports {desOut[23]}]
+set_load -pin_load 1.0 [get_ports {desOut[22]}]
+set_load -pin_load 1.0 [get_ports {desOut[21]}]
+set_load -pin_load 1.0 [get_ports {desOut[20]}]
+set_load -pin_load 1.0 [get_ports {desOut[19]}]
+set_load -pin_load 1.0 [get_ports {desOut[18]}]
+set_load -pin_load 1.0 [get_ports {desOut[17]}]
+set_load -pin_load 1.0 [get_ports {desOut[16]}]
+set_load -pin_load 1.0 [get_ports {desOut[15]}]
+set_load -pin_load 1.0 [get_ports {desOut[14]}]
+set_load -pin_load 1.0 [get_ports {desOut[13]}]
+set_load -pin_load 1.0 [get_ports {desOut[12]}]
+set_load -pin_load 1.0 [get_ports {desOut[11]}]
+set_load -pin_load 1.0 [get_ports {desOut[10]}]
+set_load -pin_load 1.0 [get_ports {desOut[9]}]
+set_load -pin_load 1.0 [get_ports {desOut[8]}]
+set_load -pin_load 1.0 [get_ports {desOut[7]}]
+set_load -pin_load 1.0 [get_ports {desOut[6]}]
+set_load -pin_load 1.0 [get_ports {desOut[5]}]
+set_load -pin_load 1.0 [get_ports {desOut[4]}]
+set_load -pin_load 1.0 [get_ports {desOut[3]}]
+set_load -pin_load 1.0 [get_ports {desOut[2]}]
+set_load -pin_load 1.0 [get_ports {desOut[1]}]
+set_load -pin_load 1.0 [get_ports {desOut[0]}]
+set_clock_groups -name "clock_groups_clk_to_others" -asynchronous -group [get_clocks clk]
+set_clock_gating_check -setup 0.0 
+set_clock_uncertainty -setup 20.0 [get_clocks clk]
+set_clock_uncertainty -hold 20.0 [get_clocks clk]
