@@ -1,0 +1,2 @@
+Placer filter=lfs diff=lfs merge=lfs -text
+dist/Placer filter=lfs diff=lfs merge=lfs -text
