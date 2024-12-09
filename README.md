@@ -1,7 +1,9 @@
 # Nimh_Place
 
-The binary file is in 'dist' folder and the test parameters are in 'benchmarks' folder. By running the following command, you can replicate the experiment result in "Multi-Electrostatics Based Placement for Non-Integer Multiple-Height Cells".
+The binary file can be downloaded from: https://mycuhk-my.sharepoint.com/:u:/g/personal/1155186058_link_cuhk_edu_hk/ER3e3LTKd2NLjMEmhi47Qp4B8hYeVady7-pV2Jd-WqubOg?e=lviyCq
+
+The test parameters are in "test" folder and the lef/lib benchmarks are in "benchmark" folder. To reproduce the experimental results in "Multi-Electrostatics Based Placement for Non-Integer Multiple-Height Cells", you can run the following command:
 
 ```
-./dist/Placer /test/opencores/aes_128.json
+./Placer /test/opencores/aes_128.json
 ```
